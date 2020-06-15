@@ -1,7 +1,7 @@
 # `About`
 
 This application is about my first practice for basic ReactJS. </br>
-It shows a list of robots which is included their profile.
+It shows a list of robots which is also included in each robot's profile.
 
 # `Function`
 
