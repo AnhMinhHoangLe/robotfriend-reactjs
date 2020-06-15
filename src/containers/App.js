@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { robots } from "../robots";
 import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
 import Scroll from "../components/Scroll";
+import ErrorBoundry from "../components/errorBoundry";
 
 class App extends Component {
     // this will summarize the included var by constructor
@@ -50,7 +50,9 @@ class App extends Component {
                 <h1 className='f1'>Robot Friends</h1>
                 <SearchBox searchChange={this.onSearchChange} />
                 <Scroll>
-                    <CardList robots={filteredRobots} />
+                    <ErrorBoundry>
+                        <CardList robots={filteredRobots} />
+                    </ErrorBoundry>
                 </Scroll>
                 {/* this one is for access to the robots */}
             </div>
