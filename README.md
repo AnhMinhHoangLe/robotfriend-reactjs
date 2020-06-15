@@ -10,7 +10,7 @@ It shows a list of robots which is included their profile.
 
 # `Picture`
 
-![app](./picture/Capture.png)
+![](./picture/Capture.PNG)
 
 ## Available Scripts
 
